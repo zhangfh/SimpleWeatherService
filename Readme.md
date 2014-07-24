@@ -21,3 +21,4 @@ CREATE TABLE `weather` (
 3.为临时显示，增加几条记录。
 4.创建alldata.php。
 5.浏览器访问alldata.php
+6.增加feed.php,浏览器访问feed.php会返回json数据
