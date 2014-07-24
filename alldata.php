@@ -1,7 +1,10 @@
 <?php
 include ("./db_connect.php");
+
+$dbc = mysql_connect("localhost","root","");
+mysql_select_db("test", $dbc);
 $sql = "select * from weather order by id,station asc";
-$result = mysql_query($sql) or trigger_error(mysqli_error());
+$result = mysql_query($sql,$dbc) or trigger_error(mysql_error());
 
 ?>
 
