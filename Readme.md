@@ -21,4 +21,6 @@ CREATE TABLE `weather` (
 3.为临时显示，增加几条记录。
 4.创建alldata.php。
 5.浏览器访问alldata.php
-6.增加feed.php,浏览器访问feed.php会返回json数据
+6.增加feed.php,浏览器访问feed.php会返回json数据，只取最新的两条
+7.增加fetch.php,浏览器访问fetch.php，会将读取的天气数据写到数据库中，但有一个现象：
+  不停的访问此地址，那么数据库也会相应的增加取回来的数据
